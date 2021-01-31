@@ -12,7 +12,7 @@ class App extends Route {
             res.status(404).send("Sorry can't find that!")
         })
 
-        app.listen(port, 'localhost', () => {
+        app.listen(port, () => {
             console.log(`Server running on port ${port}`)
         })
     }
