@@ -1,9 +1,10 @@
 {
-  "name": "komiku-scrapper",
+  "name": "manga-api",
   "version": "1.0.0",
-  "description": "Komiku Scrapper",
+  "description": "Manga API",
   "main": "index.js",
   "scripts": {
+    "start": "node index",
     "test": "nodemon index.js"
   },
   "keywords": [
