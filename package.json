@@ -1,0 +1,39 @@
+{
+  "name": "komiku-scrapper",
+  "version": "1.0.0",
+  "description": "Komiku Scrapper",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "keywords": [
+    "komik",
+    "manga",
+    "scrape",
+    "node",
+    "api"
+  ],
+  "author": "zukron alviandy",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.5",
+    "express": "^4.17.1",
+    "module-alias": "^2.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.17.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.22.1"
+  },
+  "_moduleAliases": {
+    "cores": "core/",
+    "configs": "config/",
+    "controllers": "app/controllers/",
+    "middleware": "app/middleware/",
+    "helpers": "app/helpers/",
+    "constants": "app/constants/",
+    "routes": "app/routes"
+  }
+}
