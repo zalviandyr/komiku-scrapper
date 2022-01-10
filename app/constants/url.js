@@ -10,4 +10,4 @@ exports.detailUrl = 'https://komiku.id/manga'
 
 exports.chapterUrl = 'https://komiku.id/ch'
 
-exports.baseUrl2 = 'https://data3.komiku.id'
+exports.baseUrl2 = 'https://data.komiku.id'
