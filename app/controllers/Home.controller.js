@@ -15,6 +15,7 @@ class HomeController extends Controller {
             root.each((index, elm) => {
                 const title = selector(elm).find('h4').text().trim()
                 const thumb = selector(elm).find('.ls23v > a > img').attr('src')
+                const type = selector(elm).find('.ls23v > a > div').attr('class');
                 const reader = selector(elm).find('.ls23t').first().text()
                 const release = selector(elm).find('.ls23t').last().text()
                 const detailEndpoint = selector(elm).find('.ls23v > a').attr('href')
@@ -23,7 +24,7 @@ class HomeController extends Controller {
                 const obj = {}
                 obj.title = title
                 obj.thumb = cleanUrl(thumb)
-                obj.type = 'Manga'
+                obj.type = type
                 obj.reader = reader
                 obj.release = release
                 obj.detail_endpoint = mangaTrim(detailEndpoint)
